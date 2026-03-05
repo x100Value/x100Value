@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tg-llm-router | Thanks AI Lab</title>
+  <meta name="description" content="Detailed article about tg-llm-router: what it is, why it exists, architecture, and product role.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="article-layout" data-title-en="tg-llm-router | Thanks AI Lab" data-title-ru="tg-llm-router | Thanks AI Lab" data-description-en="Detailed article about tg-llm-router: what it is, why it exists, architecture, and product role." data-description-ru="Развернутая статья о tg-llm-router: что это, зачем нужен, архитектура и продуктовая роль.">
+  <header class="topbar">
+    <a class="brand" href="../index.html">Thanks AI Lab</a>
+    <button class="lang-toggle" type="button" id="langSwitch" aria-label="Switch language">
+      <span class="en">RU</span>
+      <span class="ru">EN</span>
+    </button>
+  </header>
+
+  <main>
+    <article class="article-shell reveal">
+      <a class="back-link" href="../index.html#projects"><span class="en">← Back to projects</span><span class="ru">← Назад к проектам</span></a>
+
+      <h1>tg-llm-router</h1>
+      <p class="article-meta en">GitHub: <a href="https://github.com/x100Value/tg-llm-router" target="_blank" rel="noopener noreferrer">x100Value/tg-llm-router</a> · Last update: 2026-02-26</p>
+      <p class="article-meta ru">GitHub: <a href="https://github.com/x100Value/tg-llm-router" target="_blank" rel="noopener noreferrer">x100Value/tg-llm-router</a> · Последнее обновление: 2026-02-26</p>
+
+      <section>
+        <h2 class="en">What this project is</h2>
+        <h2 class="ru">Что это за проект</h2>
+        <p class="en">
+          tg-llm-router is a Telegram Mini App that gives one interface for multiple LLM providers.
+          Instead of forcing users to learn several tools, it routes requests to available models and applies fallback when a model is overloaded or unavailable.
+        </p>
+        <p class="ru">
+          tg-llm-router - это Telegram Mini App с единым интерфейсом для нескольких LLM-провайдеров.
+          Вместо необходимости использовать разные инструменты, проект маршрутизирует запросы к доступным моделям и включает fallback при перегрузке или недоступности модели.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="en">Why it exists</h2>
+        <h2 class="ru">Для чего проект</h2>
+        <p class="en">
+          The project targets a practical pain point: users want stable AI access directly in Telegram, without dealing with provider switching, account fragmentation, and quality instability.
+          The router turns this into one product layer that can be embedded into user, team, and agent workflows.
+        </p>
+        <p class="ru">
+          Проект решает практичную проблему: пользователям нужен стабильный доступ к AI прямо в Telegram без ручного переключения провайдеров, разрозненных аккаунтов и нестабильного качества.
+          Роутер превращает это в единый продуктовый слой для личных, командных и агентных сценариев.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="en">Core capabilities</h2>
+        <h2 class="ru">Ключевые возможности</h2>
+        <ul class="en">
+          <li>Single Telegram UI with model routing and dynamic fallback.</li>
+          <li>SSE streaming for real-time response output.</li>
+          <li>BYOK support for users who want direct key ownership.</li>
+          <li>Role-oriented product model: user, business, AI agent, developer.</li>
+          <li>Security controls: initData validation, rate limits, encrypted key handling.</li>
+        </ul>
+        <ul class="ru">
+          <li>Единый Telegram-интерфейс с маршрутизацией моделей и динамическим fallback.</li>
+          <li>SSE-стриминг для вывода ответов в реальном времени.</li>
+          <li>Поддержка BYOK для пользователей, которым нужен контроль собственных ключей.</li>
+          <li>Ролевой продуктовый контур: user, business, AI agent, developer.</li>
+          <li>Контроль безопасности: валидация initData, rate limit, шифрование ключей.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="en">Architecture and stack</h2>
+        <h2 class="ru">Архитектура и стек</h2>
+        <p class="en">
+          Frontend is built on React and Telegram WebApp SDK. Backend is Node.js/Express with PostgreSQL for persistent data.
+          The infrastructure uses nginx, SSL, and service-level deployment, while router logic refreshes available models and selects fallback path automatically.
+        </p>
+        <p class="ru">
+          Фронтенд построен на React и Telegram WebApp SDK. Бэкенд - Node.js/Express с PostgreSQL для постоянных данных.
+          Инфраструктура использует nginx, SSL и сервисный деплой, а логика роутера обновляет доступные модели и автоматически выбирает fallback-маршрут.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="en">Current stage and target outcome</h2>
+        <h2 class="ru">Текущая стадия и целевой результат</h2>
+        <p class="en">
+          The current stage is active MVP with infrastructure already running publicly.
+          The target outcome is to become a reusable AI access infrastructure for Telegram products, with predictable quality, measurable cost control, and plug-in monetization.
+        </p>
+        <p class="ru">
+          Текущая стадия - активный MVP с уже работающей публичной инфраструктурой.
+          Целевой результат - стать переиспользуемым AI-инфраструктурным слоем для Telegram-продуктов с предсказуемым качеством, контролем затрат и подключаемой монетизацией.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="en">Investment status and contact</h2>
+        <h2 class="ru">Инвестиционный статус и контакт</h2>
+        <p class="en">
+          Current financing stage: <strong>Angel investing</strong>. The team is open to focused discussions with qualified angel investors and strategic partners.
+          For investor communication, write directly to <a href="https://t.me/theloans" target="_blank" rel="noopener noreferrer">@theloans</a>.
+        </p>
+        <p class="ru">
+          Текущая стадия финансирования: <strong>ангельское инвестирование</strong>. Команда открыта к предметным обсуждениям с квалифицированными бизнес-ангелами и стратегическими партнерами.
+          По вопросам инвестиций пишите напрямую <a href="https://t.me/theloans" target="_blank" rel="noopener noreferrer">@theloans</a>.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p><strong>GitHub:</strong> <a href="https://github.com/x100Value/tg-llm-router" target="_blank" rel="noopener noreferrer">x100Value/tg-llm-router</a></p>
+  </footer>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>

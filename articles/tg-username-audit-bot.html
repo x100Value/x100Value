@@ -1,46 +1,103 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TG Username Audit Bot | Thanks AI Lab</title>
-  <meta name="description" content="TG Username Audit Bot: MVP-бот для оценки Telegram-юзернеймов.">
+  <title>TGUsernameAuditBot | Thanks AI Lab</title>
+  <meta name="description" content="Detailed article about TGUsernameAuditBot: what it does, why it exists, and how its AI fallback chain works.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
-  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="article-layout" data-title-en="TGUsernameAuditBot | Thanks AI Lab" data-title-ru="TGUsernameAuditBot | Thanks AI Lab" data-description-en="Detailed article about TGUsernameAuditBot: what it does, why it exists, and how its AI fallback chain works." data-description-ru="Развернутая статья о TGUsernameAuditBot: что делает бот, зачем нужен и как работает fallback-цепочка AI.">
   <header class="topbar">
     <a class="brand" href="../index.html">Thanks AI Lab</a>
-    <nav class="nav">
-      <a href="../index.html#projects">Проекты</a>
-      <a href="../index.html#contacts">Контакты</a>
-    </nav>
+    <button class="lang-toggle" type="button" id="langSwitch" aria-label="Switch language">
+      <span class="en">RU</span>
+      <span class="ru">EN</span>
+    </button>
   </header>
 
   <main>
-    <section class="infographic reveal">
-      <p class="eyebrow">Project Brief</p>
-      <h1>TG Username Audit Bot</h1>
-      <p class="lead">MVP-бот, который ускоряет предварительную проверку Telegram-юзернеймов и снижает шум в принятии решений.</p>
-      <p class="status">Статус: MVP</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="https://t.me/TGUsernameAuditBot" target="_blank" rel="noopener noreferrer">Открыть проект</a>
-        <a class="btn btn-secondary" href="../index.html">Назад на главную</a>
-      </div>
-    </section>
+    <article class="article-shell reveal">
+      <a class="back-link" href="../index.html#projects"><span class="en">← Back to projects</span><span class="ru">← Назад к проектам</span></a>
 
-    <section class="projects reveal">
-      <h2>Кратко по сути</h2>
-      <p><strong>Проблема:</strong> ручной аудит юзернеймов занимает время и не даёт единой рамки оценки.</p>
-      <p><strong>Решение:</strong> бот-помощник с упором на скорость, стандартизацию и фильтрацию слабых вариантов.</p>
-      <p><strong>Бизнес-цель:</strong> превратить аудит в сервисную точку входа для более широких продуктовых сценариев.</p>
-    </section>
+      <h1>TGUsernameAuditBot</h1>
+      <p class="article-meta en">Bot: <a href="https://t.me/TGUsernameAuditBot" target="_blank" rel="noopener noreferrer">@TGUsernameAuditBot</a> · Runtime: Python + systemd · Last update: 2026-02-26</p>
+      <p class="article-meta ru">Бот: <a href="https://t.me/TGUsernameAuditBot" target="_blank" rel="noopener noreferrer">@TGUsernameAuditBot</a> · Runtime: Python + systemd · Последнее обновление: 2026-02-26</p>
+
+      <section>
+        <h2 class="en">What this project is</h2>
+        <h2 class="ru">Что это за проект</h2>
+        <p class="en">
+          TGUsernameAuditBot is a production Telegram bot that evaluates username assets: naming quality, market demand, and indicative valuation range.
+          It is designed for users who buy, sell, and collect Telegram usernames as digital assets.
+        </p>
+        <p class="ru">
+          TGUsernameAuditBot - это продакшн Telegram-бот для оценки юзернейм-активов: качества имени, рыночного спроса и ориентировочного ценового диапазона.
+          Он рассчитан на пользователей, которые покупают, продают и собирают Telegram-юзернеймы как цифровые активы.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="en">Why it exists</h2>
+        <h2 class="ru">Для чего проект</h2>
+        <p class="en">
+          Most username deals are made with weak pricing logic and high emotional bias.
+          The bot gives a structured evaluation format so users can make faster and more consistent decisions before listing or buying.
+        </p>
+        <p class="ru">
+          Большинство сделок с юзернеймами происходит с неустойчивой логикой ценообразования и высоким эмоциональным шумом.
+          Бот дает структурированный формат оценки, чтобы принимать более быстрые и последовательные решения перед листингом или покупкой.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="en">How analysis works</h2>
+        <h2 class="ru">Как работает оценка</h2>
+        <ul class="en">
+          <li>Parses one or multiple assets from user messages.</li>
+          <li>Detects request language and returns response in the same language.</li>
+          <li>Applies a fixed expert template: technical quality, score blocks, and valuation ranges.</li>
+          <li>Supports clickable username formatting for easy follow-up checks.</li>
+        </ul>
+        <ul class="ru">
+          <li>Разбирает один или несколько активов из сообщения пользователя.</li>
+          <li>Определяет язык запроса и отвечает на том же языке.</li>
+          <li>Использует фиксированный экспертный шаблон: техническое качество, score-блоки и диапазоны оценки.</li>
+          <li>Поддерживает кликабельное форматирование юзернеймов для быстрого follow-up анализа.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="en">AI fallback and reliability</h2>
+        <h2 class="ru">AI fallback и надежность</h2>
+        <p class="en">
+          The bot uses a provider chain: Gemini -> Groq -> OpenRouter -> Kimi.
+          If the primary model is unavailable, requests move to the next provider automatically, so service continuity is maintained under rate limits or provider outages.
+        </p>
+        <p class="ru">
+          Бот использует цепочку провайдеров: Gemini -> Groq -> OpenRouter -> Kimi.
+          Если основной провайдер недоступен, запрос автоматически уходит на следующий, что сохраняет непрерывность сервиса при лимитах или сбоях провайдера.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="en">Operations and current state</h2>
+        <h2 class="ru">Операционный контур и текущий статус</h2>
+        <p class="en">
+          The bot is running as a persistent service via <code>tgbot.service</code> and has live usage metrics, payment counters, and admin health reports.
+          This makes it not only an AI demo, but an operational product with measurable business signals.
+        </p>
+        <p class="ru">
+          Бот работает как постоянный сервис через <code>tgbot.service</code> и ведет live-метрики использования, счетчики оплат и админ-отчеты по здоровью сервиса.
+          Поэтому это не просто AI-демо, а операционный продукт с измеримыми бизнес-сигналами.
+        </p>
+      </section>
+    </article>
   </main>
 
   <footer class="footer">
-    <p><strong>GitHub:</strong> <a href="https://github.com/x100Value" target="_blank" rel="noopener noreferrer">github.com/x100Value</a></p>
-    <p><strong>Telegram:</strong> <a href="https://t.me/theloans" target="_blank" rel="noopener noreferrer">@theloans</a></p>
+    <p><strong>Telegram:</strong> <a href="https://t.me/TGUsernameAuditBot" target="_blank" rel="noopener noreferrer">@TGUsernameAuditBot</a></p>
   </footer>
 
   <script src="../script.js" defer></script>

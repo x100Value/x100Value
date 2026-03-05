@@ -1,167 +1,227 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thanks AI Lab | Product Portfolio</title>
-  <meta name="description" content="Thanks AI Lab - MVP-проекты в Telegram и Web3: коротко, по делу, с фокусом на бизнес-результат.">
+  <title>Thanks AI Lab | GitHub Projects and Telegram Bots</title>
+  <meta name="description" content="Thanks AI Lab portfolio: non-empty GitHub repositories, production Telegram bots, and bilingual SEO articles about Telegram usernames and Fragment.">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <meta name="color-scheme" content="light only">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-title-en="Thanks AI Lab | GitHub Projects and Telegram Bots" data-title-ru="Thanks AI Lab | GitHub-проекты и Telegram-боты" data-description-en="Thanks AI Lab portfolio: non-empty GitHub repositories, production Telegram bots, and bilingual SEO articles about Telegram usernames and Fragment." data-description-ru="Портфолио Thanks AI Lab: непустые GitHub-репозитории, прод-боты Telegram и двуязычные SEO-статьи о Telegram-юзернеймах и Fragment.">
   <header class="topbar">
     <a class="brand" href="#top">Thanks AI Lab</a>
     <nav class="nav">
-      <a href="#projects">Проекты</a>
-      <a href="#articles">Статьи</a>
-      <a href="#contacts">Контакты</a>
+      <a href="#projects"><span class="en">Projects</span><span class="ru">Проекты</span></a>
+      <a href="#articles"><span class="en">Articles</span><span class="ru">Статьи</span></a>
+      <a href="#contacts"><span class="en">Contacts</span><span class="ru">Контакты</span></a>
     </nav>
+    <button class="lang-toggle" type="button" id="langSwitch" aria-label="Switch language">
+      <span class="en">RU</span>
+      <span class="ru">EN</span>
+    </button>
   </header>
 
   <main id="top">
     <section class="hero reveal">
-      <p class="eyebrow">Product Studio</p>
-      <h1>Строгий продуктовый подход к запуску MVP</h1>
-      <p class="lead">
-        Разрабатываю и тестирую ниши в Telegram и Web3. Главная логика: быстрое MVP,
-        измеримые сигналы рынка, чёткая итерация.
+      <p class="eyebrow en">Product Studio</p>
+      <p class="eyebrow ru">Продуктовая студия</p>
+      <h1 class="en">GitHub portfolio and live Telegram products</h1>
+      <h1 class="ru">GitHub-портфолио и живые Telegram-продукты</h1>
+      <p class="lead en">
+        We publish only non-empty repositories from <a href="https://github.com/x100Value" target="_blank" rel="noopener noreferrer">x100Value</a>,
+        add production Telegram projects, and maintain EN/RU SEO articles with direct links and hashtags.
+      </p>
+      <p class="lead ru">
+        Мы публикуем только непустые репозитории из <a href="https://github.com/x100Value" target="_blank" rel="noopener noreferrer">x100Value</a>,
+        добавляем продакшн Telegram-проекты и поддерживаем EN/RU SEO-статьи с прямыми ссылками и хештегами.
       </p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="#projects">Смотреть проекты</a>
+        <a class="btn btn-primary" href="#projects"><span class="en">View projects</span><span class="ru">Смотреть проекты</span></a>
+        <a class="btn btn-secondary" href="#articles"><span class="en">Read articles</span><span class="ru">Читать статьи</span></a>
         <a class="btn btn-secondary" href="https://github.com/x100Value" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a class="btn btn-secondary" href="https://t.me/theloans" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a class="btn btn-secondary" href="https://t.me/BuyandSellTelegramUsernames" target="_blank" rel="noopener noreferrer"><span class="en">Username channel</span><span class="ru">Канал юзернеймов</span></a>
       </div>
     </section>
 
-    <section class="kpi reveal" aria-label="Ключевые показатели">
+    <section class="kpi reveal" aria-label="Project metrics">
       <article class="kpi-card">
-        <p class="kpi-title">Активные MVP</p>
-        <p class="kpi-value" data-count="4">0</p>
+        <p class="kpi-title en">Visible products</p>
+        <p class="kpi-title ru">Показанные продукты</p>
+        <p class="kpi-value static" data-project-count>9</p>
       </article>
       <article class="kpi-card">
-        <p class="kpi-title">Product tracks</p>
-        <p class="kpi-value" data-count="3">0</p>
+        <p class="kpi-title en">Non-empty GitHub repos</p>
+        <p class="kpi-title ru">Непустых GitHub-репо</p>
+        <p class="kpi-value static">5</p>
       </article>
       <article class="kpi-card">
-        <p class="kpi-title">Канал привлечения</p>
-        <p class="kpi-value static">Telegram</p>
+        <p class="kpi-title en">Language mode</p>
+        <p class="kpi-title ru">Языковой режим</p>
+        <p class="kpi-value static">EN / RU</p>
       </article>
-    </section>
-
-    <section class="infographic reveal" aria-label="Инфографика стадий">
-      <h2>Pipeline по стадиям</h2>
-      <div class="bars">
-        <div class="bar-item">
-          <span>Discovery</span>
-          <div class="bar-track"><span class="bar-fill" data-fill="82"></span></div>
-        </div>
-        <div class="bar-item">
-          <span>MVP Build</span>
-          <div class="bar-track"><span class="bar-fill" data-fill="91"></span></div>
-        </div>
-        <div class="bar-item">
-          <span>Early Growth</span>
-          <div class="bar-track"><span class="bar-fill" data-fill="57"></span></div>
-        </div>
-        <div class="bar-item">
-          <span>Fundraising</span>
-          <div class="bar-track"><span class="bar-fill" data-fill="34"></span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="infographic reveal" aria-label="Операционная матрица">
-      <h2>Операционная матрица</h2>
-      <div class="radial-grid">
-        <article class="radial-card">
-          <div class="radial-ring" data-degree="88">
-            <span class="radial-number">0%</span>
-          </div>
-          <p>Execution speed</p>
-        </article>
-        <article class="radial-card">
-          <div class="radial-ring" data-degree="74">
-            <span class="radial-number">0%</span>
-          </div>
-          <p>Signal quality</p>
-        </article>
-        <article class="radial-card">
-          <div class="radial-ring" data-degree="62">
-            <span class="radial-number">0%</span>
-          </div>
-          <p>Monetization readiness</p>
-        </article>
-      </div>
     </section>
 
     <section id="projects" class="projects reveal">
-      <h2>Проекты</h2>
-      <p class="section-note">Коротко и по делу: что делает проект, на какой он стадии и куда перейти.</p>
+      <h2 class="en">Projects from GitHub and production Telegram</h2>
+      <h2 class="ru">Проекты из GitHub и продакшн Telegram</h2>
+      <p class="section-note en">GitHub cards below are non-empty repositories. Telegram cards link to live bots and channel.</p>
+      <p class="section-note ru">Карточки GitHub ниже - непустые репозитории. Карточки Telegram ведут на живых ботов и канал.</p>
 
       <div class="project-grid">
         <article class="project-card">
-          <div class="icon-circle">GM</div>
-          <h3>GGaMemesfree</h3>
-          <p>Telegram-проект с мем-контентом и трафиком под будущие продуктовые интеграции.</p>
-          <p class="status">Статус: MVP</p>
+          <div class="icon-circle">SM</div>
+          <h3>skillsmarketplace</h3>
+          <p class="en">Marketplace for AI skills with Telegram Mini App UX, billing rails, referral mechanics, and moderation flows.</p>
+          <p class="ru">Маркетплейс AI-скиллов с Telegram Mini App UX, биллингом, рефералками и модерацией.</p>
+          <p class="status en">GitHub repo + production bot + web platform.</p>
+          <p class="status ru">GitHub-репозиторий + прод-бот + web-платформа.</p>
+          <p class="meta">TypeScript · GitHub non-empty · Updated: 2026-03-05</p>
           <div class="btn-stack">
-            <a class="btn btn-primary" href="https://t.me/GGaMemesfree" target="_blank" rel="noopener noreferrer">Открыть проект</a>
-            <a class="btn btn-ghost" href="articles/ggamemesfree.html">Читать статью</a>
+            <a class="btn btn-primary" href="https://github.com/x100Value/skillsmarketplace" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-secondary" href="https://skillsmarketplace.ru" target="_blank" rel="noopener noreferrer"><span class="en">Open platform</span><span class="ru">Открыть платформу</span></a>
+            <a class="btn btn-ghost" href="articles/skillsmarketplace.html"><span class="en">Read article</span><span class="ru">Читать статью</span></a>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="icon-circle">AU</div>
-          <h3>TG Username Audit Bot</h3>
-          <p>Бот для быстрой проверки и оценки юзернеймов Telegram с фокусом на рыночную пригодность.</p>
-          <p class="status">Статус: MVP</p>
+          <div class="icon-circle">TR</div>
+          <h3>tg-llm-router</h3>
+          <p class="en">Telegram Mini App routing layer for multiple LLM providers with fallback and BYOK flows.</p>
+          <p class="ru">Маршрутизатор LLM для Telegram Mini App: несколько провайдеров, fallback и BYOK-сценарии.</p>
+          <p class="status en">AI access layer for Telegram products.</p>
+          <p class="status ru">Слой доступа к AI для Telegram-продуктов.</p>
+          <p class="meta">JavaScript · GitHub non-empty · Updated: 2026-02-27</p>
           <div class="btn-stack">
-            <a class="btn btn-primary" href="https://t.me/TGUsernameAuditBot" target="_blank" rel="noopener noreferrer">Открыть проект</a>
-            <a class="btn btn-ghost" href="articles/tg-username-audit-bot.html">Читать статью</a>
+            <a class="btn btn-primary" href="https://github.com/x100Value/tg-llm-router" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-secondary" href="https://t.me/Routeragentbot" target="_blank" rel="noopener noreferrer"><span class="en">Open bot</span><span class="ru">Открыть бота</span></a>
+            <a class="btn btn-ghost" href="articles/tg-llm-router.html"><span class="en">Read article</span><span class="ru">Читать статью</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="icon-circle">UA</div>
+          <h3>TGUsernameAuditBot</h3>
+          <p class="en">Valuation bot for Telegram usernames: liquidity checks, strategy hints, and pricing structure.</p>
+          <p class="ru">Бот-оценщик Telegram-юзернеймов: ликвидность, стратегия и структура ценообразования.</p>
+          <p class="status en">Practical workflow for username traders.</p>
+          <p class="status ru">Практический инструмент для трейдинга юзернеймов.</p>
+          <p class="meta">Telegram bot · Updated: 2026-03-05</p>
+          <div class="btn-stack">
+            <a class="btn btn-primary" href="https://t.me/TGUsernameAuditBot" target="_blank" rel="noopener noreferrer">Open bot</a>
+            <a class="btn btn-secondary" href="articles/fragment-username-guide.html"><span class="en">Fragment guide</span><span class="ru">Гайд по Fragment</span></a>
+            <a class="btn btn-ghost" href="articles/tg-username-audit-bot.html"><span class="en">Read article</span><span class="ru">Читать статью</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="icon-circle">SB</div>
+          <h3>SkillsMarketplacebot</h3>
+          <p class="en">Main Telegram bot of SkillsMarketplace: onboarding, referral links, and marketplace entrypoint.</p>
+          <p class="ru">Основной Telegram-бот SkillsMarketplace: онбординг, реферальные ссылки и вход в маркетплейс.</p>
+          <p class="status en">Primary acquisition funnel for marketplace users.</p>
+          <p class="status ru">Основная точка привлечения пользователей маркетплейса.</p>
+          <p class="meta">Telegram bot · Updated: 2026-03-05</p>
+          <div class="btn-stack">
+            <a class="btn btn-primary" href="https://t.me/SkillsMarketplacebot" target="_blank" rel="noopener noreferrer">Open bot</a>
+            <a class="btn btn-ghost" href="articles/skillsmarketplacebot.html"><span class="en">Read article</span><span class="ru">Читать статью</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="icon-circle">RA</div>
+          <h3>Routeragentbot</h3>
+          <p class="en">Telegram interface for prompt routing and model selection scenarios.</p>
+          <p class="ru">Telegram-интерфейс для маршрутизации промтов и выбора моделей.</p>
+          <p class="status en">Companion bot for AI routing use cases.</p>
+          <p class="status ru">Сопутствующий бот для AI-routing сценариев.</p>
+          <p class="meta">Telegram bot · Updated: 2026-03-05</p>
+          <div class="btn-stack">
+            <a class="btn btn-primary" href="https://t.me/Routeragentbot" target="_blank" rel="noopener noreferrer">Open bot</a>
+            <a class="btn btn-ghost" href="articles/routeragentbot.html"><span class="en">Read article</span><span class="ru">Читать статью</span></a>
           </div>
         </article>
 
         <article class="project-card">
           <div class="icon-circle">BS</div>
-          <h3>BuyAndSellTelegramUsernames</h3>
-          <p>Площадка/комьюнити для сделок с Telegram-юзернеймами и структурирования спроса/предложения.</p>
-          <p class="status">Статус: MVP</p>
+          <h3>BuyandSellTelegramUsernames</h3>
+          <p class="en">Public Telegram channel for username market updates, deal ideas, and buyer/seller matching.</p>
+          <p class="ru">Публичный Telegram-канал с апдейтами рынка юзернеймов, идеями сделок и подбором покупателей/продавцов.</p>
+          <p class="status en">Media and lead channel for username commerce.</p>
+          <p class="status ru">Медийный и лидогенерирующий канал для торговли юзернеймами.</p>
+          <p class="meta">Telegram channel · Updated: 2026-03-05</p>
           <div class="btn-stack">
-            <a class="btn btn-primary" href="https://t.me/BuyandSellTelegramUsernames" target="_blank" rel="noopener noreferrer">Открыть проект</a>
-            <a class="btn btn-ghost" href="articles/buy-sell-usernames.html">Читать статью</a>
+            <a class="btn btn-primary" href="https://t.me/BuyandSellTelegramUsernames" target="_blank" rel="noopener noreferrer">Open channel</a>
+            <a class="btn btn-ghost" href="articles/fragment-username-guide.html"><span class="en">Read Fragment guide</span><span class="ru">Читать гайд по Fragment</span></a>
           </div>
         </article>
 
         <article class="project-card">
           <div class="icon-circle">TF</div>
-          <h3>TNFT Finance</h3>
-          <p>Web3-направление для тестирования ончейн-сценариев и продуктовой экономики вокруг TNFT.</p>
-          <p class="status">Статус: MVP</p>
-          <p class="status status-highlight">Stage: Testnet. Angel round in progress.</p>
+          <h3>TNFTFinance</h3>
+          <p class="en">Security-first TON testnet experiments for DeFi/NFT lending and protocol validation.</p>
+          <p class="ru">Security-first эксперименты в TON testnet для DeFi/NFT-кредитования и валидации протокола.</p>
+          <p class="status en">Controlled environment for pre-mainnet checks.</p>
+          <p class="status ru">Контролируемая среда для pre-mainnet проверок.</p>
+          <p class="meta">TypeScript · GitHub non-empty · Updated: 2026-02-23</p>
           <div class="btn-stack">
-            <a class="btn btn-primary" href="https://github.com/x100Value" target="_blank" rel="noopener noreferrer">GitHub entry</a>
-            <a class="btn btn-ghost" href="articles/tnft-finance.html">Читать статью</a>
+            <a class="btn btn-primary" href="https://github.com/x100Value/TNFTFinance" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-ghost" href="articles/tnftfinance.html"><span class="en">Read article</span><span class="ru">Читать статью</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="icon-circle">GM</div>
+          <h3>GGaMemes</h3>
+          <p class="en">Realtime Telegram game prototype with GIF mechanics, voting loops, and retention experiments.</p>
+          <p class="ru">Realtime Telegram-игра с GIF-механиками, голосованием и экспериментами по удержанию.</p>
+          <p class="status en">Entertainment MVP for traffic and engagement tests.</p>
+          <p class="status ru">Развлекательный MVP для тестов трафика и вовлечения.</p>
+          <p class="meta">JavaScript · GitHub non-empty · Updated: 2026-02-23</p>
+          <div class="btn-stack">
+            <a class="btn btn-primary" href="https://github.com/x100Value/GGaMemes" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-ghost" href="articles/ggamemes.html"><span class="en">Read article</span><span class="ru">Читать статью</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="icon-circle">XV</div>
+          <h3>x100Value</h3>
+          <p class="en">Brand microsite and product communication center with bilingual positioning.</p>
+          <p class="ru">Брендовый микросайт и центр продуктовой коммуникации с двуязычным позиционированием.</p>
+          <p class="status en">Portfolio and investor-facing communication layer.</p>
+          <p class="status ru">Портфельный и investor-facing слой коммуникации.</p>
+          <p class="meta">HTML · GitHub non-empty · Updated: 2026-02-23</p>
+          <div class="btn-stack">
+            <a class="btn btn-primary" href="https://github.com/x100Value/x100Value" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-ghost" href="https://thanksailab.com" target="_blank" rel="noopener noreferrer"><span class="en">Open site</span><span class="ru">Открыть сайт</span></a>
           </div>
         </article>
       </div>
     </section>
 
     <section id="articles" class="article-links reveal">
-      <h2>Материалы по проектам</h2>
+      <h2 class="en">Bilingual SEO articles</h2>
+      <h2 class="ru">Двуязычные SEO-статьи</h2>
       <div class="article-list">
-        <a href="articles/ggamemesfree.html">GGaMemesfree: MVP-контур и стратегия роста</a>
-        <a href="articles/tg-username-audit-bot.html">TG Username Audit Bot: аудит и оценка юзернеймов</a>
-        <a href="articles/buy-sell-usernames.html">BuyAndSellTelegramUsernames: маркетплейс модели спроса/предложения</a>
-        <a href="articles/tnft-finance.html">TNFT Finance: тестнет и текущий angel round</a>
+        <a href="articles/fragment-username-guide.html"><span class="en">How to choose and buy a Telegram username on Fragment (guide)</span><span class="ru">Как выбрать и купить Telegram-юзернейм на Fragment (гайд)</span></a>
+        <a href="articles/tg-username-audit-bot.html"><span class="en">TGUsernameAuditBot: valuation workflow and AI fallback</span><span class="ru">TGUsernameAuditBot: процесс оценки и AI fallback</span></a>
+        <a href="articles/skillsmarketplace.html"><span class="en">SkillsMarketplace: product architecture and monetization rails</span><span class="ru">SkillsMarketplace: архитектура продукта и монетизация</span></a>
+        <a href="articles/skillsmarketplacebot.html"><span class="en">SkillsMarketplacebot: acquisition funnel and referral growth</span><span class="ru">SkillsMarketplacebot: воронка привлечения и реферальный рост</span></a>
+        <a href="articles/routeragentbot.html"><span class="en">Routeragentbot: model routing use cases in Telegram</span><span class="ru">Routeragentbot: сценарии маршрутизации моделей в Telegram</span></a>
+        <a href="articles/tg-llm-router.html"><span class="en">tg-llm-router: architecture, purpose, and product value</span><span class="ru">tg-llm-router: архитектура, назначение и ценность</span></a>
+        <a href="articles/tnftfinance.html"><span class="en">TNFTFinance: security baseline and testnet direction</span><span class="ru">TNFTFinance: security baseline и testnet-направление</span></a>
       </div>
     </section>
   </main>
 
   <footer id="contacts" class="footer reveal">
     <p><strong>GitHub:</strong> <a href="https://github.com/x100Value" target="_blank" rel="noopener noreferrer">github.com/x100Value</a></p>
-    <p><strong>Telegram:</strong> <a href="https://t.me/theloans" target="_blank" rel="noopener noreferrer">@theloans</a></p>
+    <p><strong>Telegram bots:</strong> <a href="https://t.me/TGUsernameAuditBot" target="_blank" rel="noopener noreferrer">@TGUsernameAuditBot</a> · <a href="https://t.me/SkillsMarketplacebot" target="_blank" rel="noopener noreferrer">@SkillsMarketplacebot</a> · <a href="https://t.me/Routeragentbot" target="_blank" rel="noopener noreferrer">@Routeragentbot</a></p>
+    <p><strong>Username channel:</strong> <a href="https://t.me/BuyandSellTelegramUsernames" target="_blank" rel="noopener noreferrer">t.me/BuyandSellTelegramUsernames</a></p>
+    <p><strong>Investor deck:</strong> <a href="pitch-deck.html">thanksailab.com/pitch-deck.html</a></p>
     <p class="copyright">© 2026 Thanks AI Lab</p>
   </footer>
 
