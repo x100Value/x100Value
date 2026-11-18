@@ -1,4 +1,4 @@
-# Valentin Rodionov
+# Valentin R
 
 **AI / LLM engineer. I design systems on top of language models and run them in production.**
 
